@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="test.firstTest"
+    errors="1" failures="1" hostname="" id="" package="firstTest" skipped="0"
+    tests="1" time="10.63" timestamp="">
+  
+    <testcase name="Enter to pokeapi and search charizard" classname="test.firstTest" time="5.313" assertions="1">  <failure message="Error while running &#34;mockNetworkResponse&#34; command: [TypeError] userSuppliedCallback.call is not a function">TypeError: userSuppliedCallback.call is not a function</failure>
+
+    
+    <error message="Error while running &#34;mockNetworkResponse&#34; command: [TypeError] userSuppliedCallback.call is not a function" type="error"><![CDATA[
+    TypeError: userSuppliedCallback.call is not a function
+    at NightwatchAPI.&lt;anonymous&gt; (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/api/client-commands/_base-command.js:33:46)
+    at Function.makePromise (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/utils/index.js:185:28)
+    at /Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/core/client.js:294:47
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       ✖ TypeError
+   userSuppliedCallback.call is not a function
+      - writing an ES6 async test case? - keep in mind that commands return a Promise; 
+      - writing unit tests? - make sure to specify &#34;unit_tests_mode=true&#34; in your config.
+    Stack Trace :
+    at NightwatchAPI.&lt;anonymous&gt; (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/api/client-commands/_base-command.js:33:46)
+    at Function.makePromise (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/utils/index.js:185:28)
+    at /Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/core/client.js:294:47
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

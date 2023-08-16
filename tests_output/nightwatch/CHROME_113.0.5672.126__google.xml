@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="2">
+
+  <testsuite name="nightwatch.google"
+    errors="1" failures="1" hostname="" id="" package="google" skipped="0"
+    tests="2" time="29.28" timestamp="">
+  
+    <testcase name="Google title test" classname="nightwatch.google" time="4.399" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Google search test" classname="nightwatch.google" time="10.24" assertions="1">  <failure message="Timed out while waiting for element &lt;#main&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5092ms)">    at Object.Google search test (/Users/aldo/Proyectos/Personal/nightwatch/nightwatch/google.ts:16:8)</failure>
+
+    
+    <error message="Timed out while waiting for element &lt;#main&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5092ms)[0m" type="error"><![CDATA[
+    Error
+    at Object.Google search test (/Users/aldo/Proyectos/Personal/nightwatch/nightwatch/google.ts:16:8)
+    at Context.call (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/context.js:505:35)
+    at TestCase.run (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/index.js:773:80)
+    at Runnable.run (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/index.js:927:49)
+    at TestSuite.handleRunnable (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/index.js:942:33)
+    at /Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/testsuite/index.js:773:21
+    at async DefaultRunner.runTestSuite (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/runner/test-runners/default.js:78:7)
+    at async DefaultRunner.promiseFn (/Users/aldo/Proyectos/Personal/nightwatch/node_modules/nightwatch/lib/runner/test-runners/default.js:96:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/aldo/Proyectos/Personal/nightwatch/nightwatch/google.ts:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |   &#39;Google search test&#39;: () =&gt; {
+     9 |     browser
+     10 |       .setValue(&#39;input[name=q]&#39;, &#39;nightwatchjs&#39;) 
+     11 |       .perform(function(this: any) {
+     12 |         const actions = this.actions({async: true});
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

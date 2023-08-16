@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="nightwatch.ecosia"
+    errors="0" failures="0" hostname="" id="" package="ecosia" skipped="0"
+    tests="1" time="6.331" timestamp="">
+  
+    <testcase name="Demo test ecosia.org" classname="nightwatch.ecosia" time="1.489" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/aldo/Proyectos/Personal/nightwatch/nightwatch/google.ts:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |   &#39;Google search test&#39;: () =&gt; {
+     9 |     browser
+     10 |       .setValue(&#39;input[name=q]&#39;, &#39;nightwatchjs&#39;) 
+     11 |       .perform(function(this: any) {
+     12 |         const actions = this.actions({async: true});
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
